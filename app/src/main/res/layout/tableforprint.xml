@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:id="@+id/print_view_table">
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/receiptHeading"
+            android:text="Header"
+            android:layout_width="100dp"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/receiptHeading1"
+            android:text="Refueling Receipt"
+            android:layout_width="100dp"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/datetime"
+            android:text="Date:Time"
+            android:layout_width="100dp"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </TableRow>
+
+
+    <ScrollView android:layout_height="220dp"
+        android:layout_marginTop="15dp">
+        <TableLayout android:id="@+id/score_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!--            Table Row 2-->
+            <TableRow>
+                <TextView
+                    android:text="Driver Name"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/driverName"
+                    android:text="row1"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 2-->
+            <TableRow>
+                <TextView
+                    android:text="Model"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/model"
+                    android:text="row2"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 3-->
+            <TableRow>
+                <TextView
+                    android:text="Brta Reg No"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/brta_reg_num"
+                    android:text="row3"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 4-->
+            <TableRow>
+                <TextView
+                    android:text="Serial No"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/serial_number"
+                    android:text="row4"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 5-->
+            <TableRow>
+                <TextView
+                    android:text="Current Meter Reading"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/current_meter_reading"
+                    android:text="row5"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 6-->
+            <TableRow>
+                <TextView
+                    android:text="Fuel Type"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:id="@+id/Fuel_Type"
+                    android:text="row6"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 7-->
+            <TableRow>
+                <TextView
+                    android:text="Fuel Ammount"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/fuel_ammount"
+                    android:text="row7"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+            <!--            Table Row 8-->
+            <TableRow>
+                <TextView
+                    android:text="Total Price"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/total_price"
+                    android:text="row8"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</TableLayout>

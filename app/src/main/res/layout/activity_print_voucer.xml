@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PrintVoucer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.PrintVoucer"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/tablelayoutPrintVoucer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/seletprinter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154">
+
+        <include layout="@layout/tableforprint"></include>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bluetoothdevicelist"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seletprinter"
+        app:layout_constraintVertical_bias="0.05">
+
+        <include layout="@layout/listview"></include>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/seletprinter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="16dp"
+        android:text="Select Printer"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablelayoutPrintVoucer" />
+
+    <Button
+        android:id="@+id/Print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="16dp"
+        android:text="PRINT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/dashboard_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+        </TableLayout>
+
+    </ScrollView>
+</TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<TableLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:layout_marginLeft="8dp"-->
+<!--    android:layout_marginRight="8dp"-->
+<!--    android:id="@+id/dashboard_web_view_table">-->
+
+
+
+<!--    <ScrollView android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="15dp">-->
+<!--        <TableLayout android:id="@+id/dashboard_table"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+<!--            &lt;!&ndash;            Table Row 2&ndash;&gt;-->
+<!--            <TableRow-->
+<!--                android:id="@+id/dashboard_table_header">-->
+<!--                <TextView-->
+<!--                    android:text="Date"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:text="Vehicle Id"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:text="Driver Name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:text="Fuel"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:text="Fuel Unit"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:text="Fuel Price"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/header_shape">-->
+<!--                </TextView>-->
+<!--            </TableRow>-->
+
+
+<!--        </TableLayout>-->
+<!--    </ScrollView>-->
+<!--</TableLayout>-->
+
+
+
+
+

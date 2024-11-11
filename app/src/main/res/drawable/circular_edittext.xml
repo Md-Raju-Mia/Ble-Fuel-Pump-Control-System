@@ -1,0 +1,16 @@
+<!-- res/drawable/circular_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Set corner radius to make the EditText circular -->
+    <corners android:radius="50dp"/>
+
+    <!-- Define the stroke (border) color and width -->
+    <stroke
+        android:width="2dp"
+        android:color="#03A9F4" /> <!-- Replace with your desired color -->
+
+    <!-- Define the background color -->
+    <solid android:color="#FFFFFF"/> <!-- White background -->
+
+</shape>

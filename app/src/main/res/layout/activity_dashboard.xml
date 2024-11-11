@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Dashboard">
+
+    <LinearLayout
+        android:id="@+id/cardViewFuelHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/weeklyFuelCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Weekly Fuel Cost"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeStepGranularity="1sp"
+                android:maxLines="2"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/monthlyFuelCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Monthly Fuel Cost"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeStepGranularity="1sp"
+                android:maxLines="2"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/totalFuelCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total Fuel Cost"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeStepGranularity="1sp"
+                android:maxLines="2"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            layout="@layout/dashboard_table">
+        </include>
+
+    </LinearLayout>
+
+</LinearLayout>

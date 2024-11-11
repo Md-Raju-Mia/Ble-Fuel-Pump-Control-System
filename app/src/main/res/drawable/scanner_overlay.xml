@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dark or blurred background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80000000" /> <!-- Semi-transparent black -->
+        </shape>
+    </item>
+
+    <!-- Transparent scanning box in the center -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <size
+                android:width="200dp"
+                android:height="200dp" />
+        </shape>
+
+        <gravity android:gravity="center" />
+    </item>
+
+</layer-list>
